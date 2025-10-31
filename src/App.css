@@ -1,4 +1,4 @@
-App.css
+/* App.css
 .app-container {
   max-width: 600px;
   margin: 40px auto;
@@ -22,4 +22,55 @@ App.css
   border-radius: 12px;
   font-size: 0.85em;
   
+} */
+
+/* Contenedor principal */
+.app-container {
+  max-width: 520px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+.app-title {
+  color: #008037;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Formulario de contacto */
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-contacto input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.form-contacto button {
+  background: #008037;
+  color: #fff;
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.form-contacto button:hover {
+  background: #006b2f;
+}
+
+/* Tarjeta de contacto */
+.tarjeta {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
 }
