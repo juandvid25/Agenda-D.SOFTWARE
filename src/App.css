@@ -1,76 +1,107 @@
-/* App.css
+:root {
+  --morado: #7c3aed;
+  --morado-oscuro: #5b21b6;
+  --gris: #f5f5f7;
+  --borde: #d1d5db;
+  --radio: 10px;
+}
+
+body {
+  background: var(--gris);
+  font-family: system-ui;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
 .app-container {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.card-contacto {
-  background: #f9f9f9;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 15px;
-  margin-bottom: 15px;
-}
-.card-etiqueta {
-  display: inline-block;
-  background: #39a900;
-  color: white;
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 0.85em;
-  
-} */
-
-/* Contenedor principal */
-.app-container {
-  max-width: 520px;
-  margin: 2rem auto;
-  font-family: Arial, sans-serif;
-}
-
-/* Título principal */
-.app-title {
-  color: #008037;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: var(--radio);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
   text-align: center;
-  margin-bottom: 1rem;
 }
 
-/* Formulario de contacto */
-.form-contacto {
+.app-title {
+  margin-bottom: 20px;
+  color: var(--morado-oscuro);
+}
+
+.form {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
-.form-contacto input {
+.form input {
   padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
 }
 
-.form-contacto button {
-  background: #008037;
-  color: #fff;
-  border: 0;
+.btn-agregar {
+  background: var(--morado);
+  color: white;
+  border: none;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: var(--radio);
   cursor: pointer;
+  transition: background 0.3s;
 }
 
-.form-contacto button:hover {
-  background: #006b2f;
+.btn-agregar:hover {
+  background: var(--morado-oscuro);
 }
 
-/* Tarjeta de contacto */
-.tarjeta {
-  background: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 12px;
-  margin-bottom: 12px;
+.contactos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card {
+  background: #fff;
+  padding: 15px;
+  border-radius: var(--radio);
+  border: 1px solid var(--borde);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.card h3 {
+  margin: 0 0 5px 0;
+  color: var(--morado-oscuro);
+  text-transform: capitalize;
+}
+
+.tag {
+  display: inline-block;
+  margin-top: 5px;
+  background: var(--morado);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
+
+.btn-eliminar {
+  background: #dc2626;
+  color: white;
+  border: none;
+  padding: 8px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: var(--radio);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-eliminar:hover {
+  background: #b91c1c;
 }
