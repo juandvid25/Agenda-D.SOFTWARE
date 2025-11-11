@@ -1,12 +1,9 @@
 import { useState, useEffect } from "react";
-import "./App.css";
 import FormularioContacto from "./components/FormularioContacto";
 import ContactoCard from "./components/ContactoCard";
 
 export default function App() {
-  const contactosGuardados =
-    JSON.parse(localStorage.getItem("contactos")) || [];
-
+  const contactosGuardados = JSON.parse(localStorage.getItem("contactos")) || [];
   const [contactos, setContactos] = useState(contactosGuardados);
 
   useEffect(() => {
@@ -17,22 +14,23 @@ export default function App() {
     setContactos((prev) => [...prev, nuevo]);
   };
 
-  const eliminarContacto = (id) => {
-    const confirmar = window.confirm("¿Deseas eliminar este contacto?");
-    if (confirmar) {
-      setContactos((prev) => prev.filter((c) => c.id !== id));
-    }
+  const eliminarContacto = (correo) => {
+    setContactos((prev) => prev.filter((c) => c.correo !== correo));
   };
 
-  return (
-    <main className="app-container">
-      <h1 className="app-title">Agenda ADSO v3</h1>
+return (
+  <main className="max-w-3xl mx-auto px-4 py-8 space-y-4 text-center">
+    <h1 className="flex items-center justify-center gap-2 text-3xl font-bold text-purple-600">
+      Agenda v4
+    </h1>
+
       <FormularioContacto onAgregar={agregarContacto} />
-      <div className="contactos-lista">
+
+      <section className="space-y-4">
         {contactos.map((c) => (
-          <ContactoCard key={c.id} {...c} onEliminar={eliminarContacto} />
+          <ContactoCard key={c.correo} {...c} onEliminar={eliminarContacto} />
         ))}
-      </div>
+      </section>
     </main>
   );
 }

@@ -70,7 +70,7 @@ button:focus-visible {
   }
 } */
 
-
+/* 
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -84,4 +84,13 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+} */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-800 font-sans;
+  }
 }
