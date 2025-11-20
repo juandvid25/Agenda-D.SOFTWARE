@@ -1,56 +1,50 @@
-// export default function ContactoCard({
-//   id,
-//   nombre,
-//   telefono,
-//   correo,
-//   etiqueta,
-//   onEliminar,
-// }) {
-//   return (
-//     <div className="card">
-//       <h3>{nombre}</h3>
-//       <p>📞 {telefono}</p>
-//       <p>✉️ {correo}</p>
-//       {etiqueta && <span className="tag">{etiqueta}</span>}
-//       <button className="btn-eliminar" onClick={() => onEliminar(id)}>
-//         Eliminar
-//       </button>
-//     </div>
-//   );
-// }
-// Instructor: Gustavo Bolaños – Curso: Desarrollo Web – ReactJS (Agenda ADSO)
+// Este componente muestra un contacto individual.
+// Incluye nombre, teléfono, correo, etiqueta y el botón de eliminar.
 
-// Instructor: Gustavo Bolaños – Curso: Desarrollo Web – ReactJS (Agenda ADSO)
-
-export default function ContactCard({ nombre, telefono, correo, etiqueta, onEliminar }) {
+export default function ContactoCard({
+  nombre,
+  telefono,
+  correo,
+  etiqueta,
+  onEliminar,
+}) {
   return (
-    <article className="bg-white rounded-xl border border-gray-200 shadow-sm p-4 flex justify-between items-start">
+    <div className="bg-white shadow-sm border border-gray-200 rounded-2xl p-6 flex items-start justify-between">
+      
+      {/* Información del contacto */}
       <div className="space-y-1">
-        <h3 className="text-lg font-semibold text-gray-900">{nombre}</h3>
 
-        <p className="flex items-center gap-1 text-sm text-gray-700">
-          <span className="text-morado">📞</span>
+        {/* Nombre */}
+        <h3 className="text-xl font-semibold text-gray-800">{nombre}</h3>
+
+        {/* Teléfono */}
+        <p className="text-gray-600 text-sm flex items-center gap-2">
+          <span className="text-purple-500 text-lg">📞</span>
           {telefono}
         </p>
 
-        <p className="flex items-center gap-1 text-sm text-gray-700">
-          <span className="text-morado">📧</span>
+        {/* Correo */}
+        <p className="text-gray-600 text-sm flex items-center gap-2">
+          <span className="text-purple-500 text-lg">✉️</span>
           {correo}
         </p>
 
+        {/* Etiqueta opcional */}
         {etiqueta && (
-          <span className="bg-morado/10 text-morado text-xs font-medium rounded-full px-3 py-1 inline-block">
+          <span className="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full mt-2">
             {etiqueta}
           </span>
         )}
       </div>
 
+      {/* Botón de eliminar */}
       <button
         onClick={onEliminar}
-        className="bg-red-500 hover:bg-red-600 text-white text-sm font-medium px-3 py-1.5 rounded-md"
+        className="bg-red-500 hover:bg-red-600 text-white text-sm px-4 py-2 rounded-lg shadow transition"
       >
         Eliminar
       </button>
-    </article>
+
+    </div>
   );
 }

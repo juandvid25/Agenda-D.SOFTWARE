@@ -1,0 +1,18 @@
+{
+  "contactos": [
+    {
+      "id": "a6a6",
+      "nombre": "andres cordoba",
+      "telefono": "28376487236487",
+      "correo": "juaniwne@hotmail.com",
+      "etiqueta": "familia"
+    },
+    {
+      "id": "ed2d",
+      "nombre": "andres daniel",
+      "telefono": "28376487236487",
+      "correo": "juaniwne@hotmail.com",
+      "etiqueta": "familia"
+    }
+  ]
+}
