@@ -1,18 +1,18 @@
 {
   "contactos": [
     {
-      "id": "a6a6",
-      "nombre": "andres cordoba",
-      "telefono": "28376487236487",
+      "id": "94cf",
+      "nombre": "juan david mosquera",
+      "telefono": "3203232954",
       "correo": "juaniwne@hotmail.com",
-      "etiqueta": "familia"
+      "etiqueta": "hermano"
     },
     {
-      "id": "ed2d",
-      "nombre": "andres daniel",
-      "telefono": "28376487236487",
+      "id": "d7c1",
+      "nombre": "juan david mosquera",
+      "telefono": "3203232954",
       "correo": "juaniwne@hotmail.com",
-      "etiqueta": "familia"
+      "etiqueta": "hermano"
     }
   ]
 }

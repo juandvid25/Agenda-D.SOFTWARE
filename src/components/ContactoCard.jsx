@@ -22,7 +22,7 @@ export default function ContactoCard({
           <span className="text-purple-500 text-lg">📞</span>
           {telefono}
         </p>
-
+      
         {/* Correo */}
         <p className="text-gray-600 text-sm flex items-center gap-2">
           <span className="text-purple-500 text-lg">✉️</span>
@@ -30,11 +30,11 @@ export default function ContactoCard({
         </p>
 
         {/* Etiqueta opcional */}
-        {etiqueta && (
-          <span className="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full mt-2">
-            {etiqueta}
-          </span>
-        )}
+       <span className="inline-block bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full mt-2"></span>
+          <span className="text-purple-500 text-lg"></span>
+          {etiqueta}
+         
+        
       </div>
 
       {/* Botón de eliminar */}
