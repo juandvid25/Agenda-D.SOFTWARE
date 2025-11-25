@@ -1,18 +1,18 @@
 {
   "contactos": [
     {
-      "id": "92c3",
-      "nombre": "juan david",
-      "telefono": "3203232954",
-      "correo": "juandavidmospa12@gmail.com",
-      "etiqueta": "estudiante"
-    },
-    {
       "id": "04b3",
       "nombre": "juan david mosquera ",
       "telefono": "3203232954",
       "correo": "Juandavidmospa12@gmail.com",
       "etiqueta": "estudiante"
+    },
+    {
+      "id": "90f6",
+      "nombre": "andres cordoba",
+      "telefono": "3203232954",
+      "correo": "Juandavidmospa12@gmail.com",
+      "etiqueta": "hermano"
     }
   ]
 }
