@@ -116,6 +116,8 @@ import {
   eliminarContactoPorId,
 } from "./api";
 
+import { APP_INFO } from "./config";
+
 import FormularioContacto from "./components/FormularioContacto";
 import ContactoCard from "./components/ContactoCard";
 
@@ -188,13 +190,13 @@ function App() {
 
         <header className="mb-8">
           <p className="text-xs tracking-[0.3em] text-gray-500 uppercase">
-            Desarrollo Web ReactJS Ficha 3223876
+            Desarrollo Web ReactJS Ficha {APP_INFO.ficha}
           </p>
           <h1 className="text-4xl font-extrabold text-gray-900 mt-2">
-            Agenda ADSO v6
+           {APP_INFO.titulo}
           </h1>
           <p className="text-sm text-gray-600 mt-1">
-            Gestión de contactos conectada a una API local con JSON Server.
+          {APP_INFO.subtitulo}
           </p>
         </header>
 
