@@ -8,3 +8,4 @@ body {
   /* Fondo gris claro, tipografía sans, color de texto base */
   @apply bg-gray-50 text-gray-800 font-sans;
 }
+

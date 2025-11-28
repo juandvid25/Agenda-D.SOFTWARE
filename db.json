@@ -8,11 +8,18 @@
       "etiqueta": "estudiante"
     },
     {
-      "id": "90f6",
-      "nombre": "andres cordoba",
-      "telefono": "3203232954",
+      "nombre": "andres cabeza",
+      "telefono": "3203232959",
       "correo": "Juandavidmospa12@gmail.com",
-      "etiqueta": "hermano"
+      "etiqueta": "hermano",
+      "id": "90f6"
+    },
+    {
+      "nombre": "andres mena",
+      "telefono": "3203232959",
+      "correo": "Juandavidmospa12@gmail.com",
+      "etiqueta": "hermano",
+      "id": "dea3"
     }
   ]
 }
